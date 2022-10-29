@@ -123,8 +123,10 @@ Este microprocesador utilizaba la misma microarquitectura que los microprocesado
 en lenguaje ensamblador escritos en 8 bits migraran sin problemas. El 8086 no solo tenía una frecuencia más alta que la 8088, sino que también empleaba un 
 bus de datos externo de 16 bits y una cola de precarga de 6 bytes más larga. También podía ejecutar tareas de 16 bits (aunque la mayoría del software en ese 
 momento estaba diseñado para procesadores de 8 bits). El bus de direcciones se amplió a 20 bits, lo que permitió al 8086 acceder a hasta 1 MB de memoria y, 
-por lo tanto, aumentar el rendimiento. El 8086 también se convirtió en el primer procesador x86 y utilizó la primera revisión del x86 ISA\brackcite{wikipedia_2022_x86_ISA}, en el que se han 
-basado casi todos los procesadores creados por AMD o Intel desde la introducción del 8086 \brackcite{wikipedia_2022_Microprocesador,sexton_2018_history_intel_cpus,wikipedia_2022_intel_8086}.
+por lo tanto, aumentar el rendimiento. El 8086 también se convirtió en el primer procesador x86 y utilizó la primera revisión del x86 
+ISA \brackcite{wikipedia_2022_x86_ISA}, en el que se han basado casi todos los procesadores creados por AMD o Intel desde la introducción del 8086 
+\brackcite{wikipedia_2022_Microprocesador,sexton_2018_history_intel_cpus,wikipedia_2022_intel_8086}.
+
 \begin{figure}[htb]
 	\centering
 	\includegraphics[scale = 0.2]{Graphics/Intel_C8086.jpg}
@@ -133,6 +135,94 @@ basado casi todos los procesadores creados por AMD o Intel desde la introducció
 \end{figure}
 
 \section{El arribo de los 32 bits}
+
+Los diseños de 16 bits solo habían estado en el mercado brevemente cuando comenzaron a aparecer implementaciones de 32 bits.
+El más significativo de los diseños de  microprocesadores de 32 bits fue el Motorola MC68000, introducido en 1979. 
+El 68k, como se le conocía ampliamente, tenía  registros de 32 bits en su modelo de programación pero usaba rutas internas
+de datos de 16 bits, tres unidades aritméticas-lógicas de 16 bits, y un bus de datos externo de 16 bits para reducir 
+el conteo de pines. Soportaba externamente solo direcciones de 24 bits (internamente funcionaba con direcciones completas de 
+32 bits). Los diseños de Apple Lisa y Macintosh utilizaron el 68000, al igual que muchos otros diseños a mediados de la década de 
+1980, incluidos Atari ST y Commodore Amiga. El primer microprocesador de 32 bits de un solo chip del mundo, con rutas de datos de 
+32 bits, buses de 32 bits y direcciones de 32 bits, fue el AT\&T Bell Labs BELLMAC-32A, con las primeras muestras en 1980 y la producción general en 1982 . 
+Después de la venta de AT\&T en 1984, pasó a llamarse WE 32000 (WE de Western Electric) y tuvo dos generaciones posteriores, WE 32100 y WE 32200.
+El primer microprocesador comercial de un solo chip de 32 bits disponible en el mercado fue el HP FOCUS.
+El primer microprocesador de 32 bits de Intel fue el iAPX 432, que se introdujo en 1981, pero no fue un éxito comercial. Tenía una arquitectura orientada 
+a objetos basada en capacidades avanzadas, pero un rendimiento deficiente en comparación con las arquitecturas contemporáneas, como la 80286 de Intel 
+(introducida en 1982), que era casi cuatro veces más rápida en las pruebas de referencia típicas. Sin embargo, los resultados para el iAPX432 se 
+debieron en parte a un compilador de Ada apresurado y, por lo tanto, subóptimo.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale = 0.15]{Graphics/Motorola_MC68HC000FN8-0695.jpg}
+	\caption{Motorola 68K}
+	\label{fig:17}
+\end{figure}
+
+\section{El arribo de los 64 bits}
+Antes que se introdujeran los primeros microprocesadores de 64 bits destinados a las computadoras peronsales, desde principios de la década de 1990 se 
+utilizaron diseños de microprocesadores de 64 bits en varios mercados. En 1991 MIPS Computer Systems produce el primer microprocesador de 64 bits, el R4000, 
+que implementa la arquitectura MIPS III, la tercera revisión de su arquitectura MIPS. El R4000 se utilizó en estaciones de trabajo de gráficos SGI. En 1996
+la compañía nipona de videojuegos Nintendo introduce la consola de videojuegos Nintendo 64, que utiliza el microprocesador VR4300 de 64 bits, construido alrededor 
+de una variante de bajo costo del MIPS R4000. En 1998 IBM lanza la línea POWER3 de microprocesadores de 64 bits.
+\subsection{La llegada de los 64 bits a las computadoras personales}
+EN septiembre de 2003 AMD introduce  la arquitectura de 64 bits retrocompatible con x86, x86-64 (también llamada AMD64). La línea de procesadores Opteron 
+y Athlon 64, fue la primera basada en la arquitectura AMD64. En 2004 Intel introduce la arquitectura EM64T(luego fue renombrada a Intel 64), que es una versión de 64 bits 
+de la arquitectura x86. La primera línea de procesadores basados en EM64T fue la línea Pentium 4.  Ambas versiones pueden ejecutar aplicaciones heredadas de 32 bits sin 
+ninguna penalización en el rendimiento, así como el nuevo software de 64 bits.
+
+% \begin{figure}[ht]
+% 	\begin{subfigure}[b]{0.5\textwidth}
+% 		\centering
+% 		% include first image
+% 		\includegraphics[width=.4\linewidth]{Graphics/CPU-NUS_01-Nintendo64.jpg}  
+% 		\caption{Microprocesador VR4300 de la Nintendo 64}
+% 		\label{fig:sub-first}
+% 	  \end{subfigure}
+% 	  \hfill
+% 	  \begin{subfigure}[b]{0.5\textwidth}
+% 		\centering
+% 		% include second image
+% 		\includegraphics[width=.4\linewidth]{Graphics/AMD_Athlon_64_3200+_ADA3200AEP5AP.jpg}  
+% 		\caption{AMD Athlon 64 3200}
+% 		\label{fig:sub-second}
+% 	  \end{subfigure}
+% 	\caption{64 bits}
+% 	\label{fig:18}
+% \end{figure}
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale = 0.15]{Graphics/CPU-NUS_01-Nintendo64.jpg}
+	\caption{Microprocesador VR4300 de la Nintendo 64}
+	\label{fig:18}
+\end{figure}
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale = 0.15]{Graphics/AMD_Athlon_64_3200+_ADA3200AEP5AP.jpg}
+	\caption{AMD Athlon 64 3200}
+	\label{fig:19}
+\end{figure}
+
+
+% \begin{figure}
+% 	\centering
+% 	\begin{subfigure}[b]
+% 		\centering
+% 		\includegraphics[scale = 0.1]{Graphics/CPU-NUS_01-Nintendo64.jpg}
+% 		\caption{Microprocesador VR4300 de la Nintendo 64}
+% 		\label{Microprocesador VR4300 de la Nintendo 64}
+% 	\end{subfigure}
+% 	\hfill
+% 	\begin{subfigure}[b]
+% 		\centering
+% 		\includegraphics[scale = 0.1]{Graphics/AMD_Athlon_64_3200+_ADA3200AEP5AP.jpg}
+% 		\caption{AMD Athlon 64 3200}
+% 		\label{AMD Athlon 64 3200}
+% 	\end{subfigure}
+% 	\caption{Three simple graphs}
+% 	\label{fig:18}
+% \end{figure}
+
 
 % En 1968, Vic Poor y Harry Pyle de CTC 
 % desarrollaron el diseño original para el conjunto de instrucciones y el funcionamiento del procesador. En 1969, CTC contrató a dos empresas, Intel y Texas Instruments, para 
