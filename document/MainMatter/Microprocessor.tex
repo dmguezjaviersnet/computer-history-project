@@ -90,6 +90,49 @@ sino de \textbf{CTC}. El 8008 salió con 3.500 transistores, tenía un bus de da
 	\label{fig:13}
 \end{figure}
 
+\subsection{8080}
+El Intel 8080 es el segundo microprocesador de 8 bits diseñado y fabricado por Intel. Apareció por primera vez en abril de 1974 y es una variante ampliada y mejorada
+del diseño anterior del 8008, aunque sin compatibilidad binaria. La velocidad de reloj o límite de frecuencia especificado inicialmente era de 2 MHz, con instrucciones
+comunes que usaban 4, 5, 7, 10 o 11 ciclos. Como resultado, el procesador podía ejecutar varios cientos de miles de instrucciones por segundo. Federico Faggin lo concibió 
+y diseñó utilizando MOS de canal N de alto voltaje.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale = 0.2]{Graphics/8080_microprocessorr.jpg}
+	\caption{Microprocesador  \textbf{Intel 8080}}
+	\label{fig:14}
+\end{figure}
+
+\section{El arribo de los 16 bits}
+
+El primer microprocesador multichip de 16 bits fue el National Semiconductor IMP-16, presentado a principios de 1973. Una versión de 8 bits del conjunto de 
+chips se introdujo en 1974 como IMP-8. Durante el mismo año, National presentó el primer microprocesador de un solo chip de 16 bits, el PACE, seguido de una 
+versión NMOS, el INS8900. El primer microprocesador de 16 bits de un solo chip fue el TMS 9900 de TI, presentado en 1976, que también era compatible con su 
+línea de minicomputadoras TI-990. Intel produjo su primer procesador de 16 bits, el 8086, en 1978. Era compatible con el 8080 y el 8085 (un derivado del 8080)
+\brackcite{wikipedia_2022_Microprocesador,staff_2021_microprocessor}.
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale = 0.2]{Graphics/NSIMP-16A.jpg}
+	\caption{Microprocesador  IMP-16}
+	\label{fig:15}
+\end{figure}
+
+\section{8086: El comienzo de x86}
+El primer procesador de 16 bits de Intel fue el 8086, que ayudó a mejorar considerablemente el rendimiento en comparación con los diseños anteriores.
+Este microprocesador utilizaba la misma microarquitectura que los microprocesadores de 8 bits de Intel (8008, 8080 y 8085). Esto permitió que los programas 
+en lenguaje ensamblador escritos en 8 bits migraran sin problemas. El 8086 no solo tenía una frecuencia más alta que la 8088, sino que también empleaba un 
+bus de datos externo de 16 bits y una cola de precarga de 6 bytes más larga. También podía ejecutar tareas de 16 bits (aunque la mayoría del software en ese 
+momento estaba diseñado para procesadores de 8 bits). El bus de direcciones se amplió a 20 bits, lo que permitió al 8086 acceder a hasta 1 MB de memoria y, 
+por lo tanto, aumentar el rendimiento. El 8086 también se convirtió en el primer procesador x86 y utilizó la primera revisión del x86 ISA\brackcite{wikipedia_2022_x86_ISA}, en el que se han 
+basado casi todos los procesadores creados por AMD o Intel desde la introducción del 8086 \brackcite{wikipedia_2022_Microprocesador,sexton_2018_history_intel_cpus,wikipedia_2022_intel_8086}.
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale = 0.2]{Graphics/Intel_C8086.jpg}
+	\caption{Intel 8086}
+	\label{fig:16}
+\end{figure}
+
+\section{El arribo de los 32 bits}
 
 % En 1968, Vic Poor y Harry Pyle de CTC 
 % desarrollaron el diseño original para el conjunto de instrucciones y el funcionamiento del procesador. En 1969, CTC contrató a dos empresas, Intel y Texas Instruments, para 
