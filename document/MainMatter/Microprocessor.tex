@@ -158,7 +158,17 @@ debieron en parte a un compilador de Ada apresurado y, por lo tanto, subóptimo.
 	\caption{Motorola 68K}
 	\label{fig:17}
 \end{figure}
-
+\subsection{80386: x86 se convierte a 32-bit}
+El primer procesador x86 de 32 bits de Intel fue el 80386(renombrado más tarde como i386), lanzado en 1985. Una ventaja clave que tenía este procesador era su bus de 
+direcciones de 32 bits que le permitía admitir hasta 4 GB de memoria del sistema. Aunque esto era mucho más de lo que nadie estaba 
+usando en ese momento, las limitaciones de RAM a menudo perjudican el rendimiento de los procesadores x86 anteriores y de la competencia.
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale = 0.1]{Graphics/Intel_i386DX.jpg}
+	\caption{Intel i386}
+	\label{fig:18}
+\end{figure}
+\newpage
 \section{El arribo de los 64 bits}
 Antes que se introdujeran los primeros microprocesadores de 64 bits destinados a las computadoras peronsales, desde principios de la década de 1990 se 
 utilizaron diseños de microprocesadores de 64 bits en varios mercados. En 1991 MIPS Computer Systems produce el primer microprocesador de 64 bits, el R4000, 
@@ -171,40 +181,22 @@ y Athlon 64, fue la primera basada en la arquitectura AMD64. En 2004 Intel intro
 de la arquitectura x86. La primera línea de procesadores basados en EM64T fue la línea Pentium 4.  Ambas versiones pueden ejecutar aplicaciones heredadas de 32 bits sin 
 ninguna penalización en el rendimiento, así como el nuevo software de 64 bits \brackcite{wikipedia_2022_Microprocesador}.
 
-% \begin{figure}[ht]
-% 	\begin{subfigure}[b]{0.5\textwidth}
-% 		\centering
-% 		% include first image
-% 		\includegraphics[width=.4\linewidth]{Graphics/CPU-NUS_01-Nintendo64.jpg}  
-% 		\caption{Microprocesador VR4300 de la Nintendo 64}
-% 		\label{fig:sub-first}
-% 	  \end{subfigure}
-% 	  \hfill
-% 	  \begin{subfigure}[b]{0.5\textwidth}
-% 		\centering
-% 		% include second image
-% 		\includegraphics[width=.4\linewidth]{Graphics/AMD_Athlon_64_3200+_ADA3200AEP5AP.jpg}  
-% 		\caption{AMD Athlon 64 3200}
-% 		\label{fig:sub-second}
-% 	  \end{subfigure}
-% 	\caption{64 bits}
-% 	\label{fig:18}
-% \end{figure}
+
 \begin{figure}[htb]
 	\centering
 	\includegraphics[scale = 0.15]{Graphics/CPU-NUS_01-Nintendo64.jpg}
 	\caption{Microprocesador VR4300 de la Nintendo 64}
-	\label{fig:18}
+	\label{fig:19}
 \end{figure}
 
 \begin{figure}[htb]
 	\centering
 	\includegraphics[scale = 0.15]{Graphics/AMD_Athlon_64_3200+_ADA3200AEP5AP.jpg}
 	\caption{AMD Athlon 64 3200}
-	\label{fig:19}
+	\label{fig:20}
 \end{figure}
 
-\section{Evolución de los microprocesadores de Intel}
+\section{Intel: el camino hacia los Intel Core}
 Intel Corporation es una corporación multinacional estadounidense y una empresa de tecnología con sede en Santa Clara, California. 
 Es el fabricante de chips semiconductores más grande del mundo por ingresos y es uno de los desarrolladores de la serie x86 
 de conjuntos de instrucciones x86\brackcite{wikipedia_2022_x86_ISA}, los conjuntos de instrucciones que se encuentran en la mayoría de las 
@@ -231,8 +223,60 @@ diseño completamente diferente. Intel esperaba que iAPX 432 fuera varias veces 
 finalmente falló debido a algunos defectos de diseño importantes. Aunque los procesadores x86 son relativamente complejos, el iAPX 432 
 llevó CISC a un nivel completamente nuevo de complejidad\brackcite{sexton_2018_history_of_intel_cpus,wikipedia_2022_iapx_432}.
 
+\subsection{i960: El primer microprocesador RISC de Intel}
+RISC (del inglés Reduced Instruction Set Computer) es un tipo de diseño de CPU generalmente utilizado en microprocesadores o 
+con las siguientes características fundamentales:
+\begin{itemize}
+	\item Instrucciones de tamaño fijo y presentadas en un reducido número de formatos.
+	\item Solo las instrucciones de carga y almacenamiento acceden a la memoria de datos.
+\end{itemize}
+RISC está a favor de conjuntos de instrucciones pequeñas y simples que toman menor tiempo para ejecutarse.
+Intel creó su primer procesador RISC en 1984 \brackcite{wikipedia_2022_RISC}. No fue diseñado como un competidor directo de los procesadores 
+x86 de la empresa porque estaba pensado como una solución integrada segura. Internamente, era una arquitectura superescalar de 32 bits que 
+usaba los conceptos de diseño de Berkeley RISC\brackcite{sexton_2018_history_of_intel_cpus}.
 
-\section{Evolución de los microprocesadores de AMD}
+\subsection{80486: Integrando la FPU}
+El 80486(i486) de Intel fue otro paso importante en términos de rendimiento. La clave de su éxito fue una integración más estrecha de los componentes 
+en la CPU. El 80486 fue la primera CPU x86 en contener caché L1. Los primeros modelos 80486 venían con 8 KB en matriz y se grabaron en un proceso de 1000 nm.
+Intel también incorporó la FPU(unidad de punto flotante diseñada especialmente para llevar a cabo operaciones con números de punto flotante) a la CPU, que hasta ese 
+momento había sido una unidad de procesamiento funcional independiente. Al mover estas piezas de hardware al procesador host, la latencia entre ellas se redujo 
+drásticamente. El 80486 también usó una interfaz FSB(front-side bus)\brackcite{wikipedia_2022_front_side_bus} más rápida para aumentar el ancho de banda, y el núcleo 
+tenía varios otros ajustes para impulsar el IPC. Estos cambios aumentaron significativamente el rendimiento del 80486 y los modelos de gama alta fueron varias 
+veces más rápidos que el 80386 anterior\brackcite{sexton_2018_history_of_intel_cpus, }. 
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale = 0.15]{Graphics/Intel_80486sx.jpg}
+	\caption{Intel i486}
+	\label{fig:21}
+\end{figure}
+
+\subsection{P5: El primer Pentium}
+El Pentium surgió en 1993 como el primer procesador Intel x86 que no seguía el sistema numérico 80x86. Internamente, el Pentium utilizó la arquitectura P5, que fue el 
+primer diseño superescalar x86 de Intel. Aunque el Pentium fue generalmente más rápido que el 80486 en todos los sentidos, su característica más destacada fue una FPU 
+sustancialmente mejorada. La FPU del Pentium original era más de diez veces más rápida que la unidad antigua del 80486. Esto se convirtió en una característica aún más 
+significativa en años posteriores cuando Intel lanzó el Pentium MMX. Este procesador tenía la misma arquitectura que el Pentium original, pero incluía soporte para el 
+nuevo conjunto de instrucciones MMX SIMD de Intel que podría aumentar drásticamente el rendimiento. Intel también aumentó el tamaño de caché L1 en sus procesadores Pentium 
+en relación con el 80486. Los Pentium iniciales contenían 16 KB, mientras que el Pentium MMX subió a 32 KB. Naturalmente, estos procesadores también funcionaron a 
+velocidades de reloj más altas.
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale = 0.15]{Graphics/Intel_Pentium_P5.jpg}
+	\caption{Intel Pentium P5}
+	\label{fig:22}
+\end{figure}
+
+\subsection{P6: El Pentium Pro}
+Intel planeó seguir rápidamente al Pentium con el Pentium Pro basado en su arquitectura P6, pero se encontró con dificultades técnicas. El Pentium Pro fue considerablemente 
+más rápido que el Pentium en operaciones de 32 bits, gracias a su diseño \emph{out-of-order}.  El Pentium Pro presentaba una arquitectura interna significativamente rediseñada 
+que decodificaba instrucciones en microoperaciones,
+\subsection{Pentium II}
+Intel no abandonó la arquitectura P6, sino que esperó hasta 1997 cuando lanzó el Pentium II. El Pentium II logró superar casi todos los aspectos negativos del Pentium Pro. 
+Su arquitectura subyacente era similar a la del Pentium Pro, y continuó usando un \emph{papeline} de 14 etapas con varias mejoras en el núcleo para mejorar el IPC
+(Del inglés instrucction per clock es la cantidad de instrucciones que es capaz de ejecutar por cada ciclo de reloj).
+
+
+\section{AMD: El camino hacia los Ryzen}
+\section{Eficiencia por watt y la autonomía de los microprocesadores}
 
 
 
