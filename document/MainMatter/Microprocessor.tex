@@ -202,14 +202,14 @@ penalización en el rendimiento, así como el nuevo software de 64 bits.
 	\caption{\textbf{AMD Athlon 64 3200}}
 	\label{fig:20}
 \end{figure}
-
-\section{Intel: el camino hacia los \emph{Intel Core i}}
+\newpage
+\section{Intel: el camino hacia los Intel Core}
 \emph{Intel Corporation} es una corporación multinacional estadounidense y una empresa de tecnología con sede en \emph{Santa Clara, California}. 
 Es el fabricante de chips semiconductores más grande del mundo por ingresos y es uno de los desarrolladores de la serie x86 
 de conjuntos de instrucciones x86 \brackcite{wikipedia_2022_x86_ISA}, los conjuntos de instrucciones que se encuentran en la mayoría de las 
 computadoras personales. Muchos de sus productos como el \textbf{4004} o el \textbf{8086}, vistos en las secciones anteriores, ocupan un lugar especial 
 en la historia de los microprocesadores. A continuación veremos a otros de los microprocesadores y las arquitecturas que convirtieron 
-al gigante de los semiconductores en lo que es hoy en día.\
+a este gigante de los semiconductores en lo que es hoy en día.\
 
 \subsection{\textbf{80186} y \textbf{80188}}
 \emph{Intel} siguió al \textbf{8086} con varios otros procesadores, los cuales usaban una arquitectura similar de 16 bits. El primero fue \textbf{80186}, 
@@ -244,7 +244,7 @@ usaba los conceptos de diseño de Berkeley RISC\brackcite{sexton_2018_history_of
 \subsection{80486: Integrando la FPU}
 El 80486(i486) de Intel fue otro paso importante en términos de rendimiento. La clave de su éxito fue una integración más estrecha de los componentes 
 en la CPU. El 80486 fue la primera CPU x86 en contener caché L1. Los primeros modelos 80486 venían con 8 KB en matriz y se grabaron en un proceso de 1000 nm.
-Intel también incorporó la FPU(unidad de punto flotante diseñada especialmente para llevar a cabo operaciones con números de punto flotante) a la CPU, que hasta ese 
+Intel también incorporó la \textbf{FPU}(unidad de punto flotante diseñada especialmente para llevar a cabo operaciones con números de punto flotante) a la CPU, que hasta ese 
 momento había sido una unidad de procesamiento funcional independiente. Al mover estas piezas de hardware al procesador host, la latencia entre ellas se redujo 
 drásticamente. El 80486 también usó una interfaz FSB(front-side bus)\brackcite{wikipedia_2022_front_side_bus} más rápida para aumentar el ancho de banda, y el núcleo 
 tenía varios otros ajustes para impulsar el IPC. Estos cambios aumentaron significativamente el rendimiento del 80486 y los modelos de gama alta fueron varias 
@@ -256,14 +256,41 @@ veces más rápidos que el 80386 anterior\brackcite{sexton_2018_history_of_intel
 	\label{fig:21}
 \end{figure}
 
-\subsection{P5: El primer Pentium}
-El Pentium surgió en 1993 como el primer procesador Intel x86 que no seguía el sistema numérico 80x86. Internamente, el Pentium utilizó la arquitectura P5, que fue el 
-primer diseño superescalar x86 de Intel. Aunque el Pentium fue generalmente más rápido que el 80486 en todos los sentidos, su característica más destacada fue una FPU 
-sustancialmente mejorada. La FPU del Pentium original era más de diez veces más rápida que la unidad antigua del 80486. Esto se convirtió en una característica aún más 
-significativa en años posteriores cuando Intel lanzó el Pentium MMX. Este procesador tenía la misma arquitectura que el Pentium original, pero incluía soporte para el 
-nuevo conjunto de instrucciones MMX SIMD de Intel que podría aumentar drásticamente el rendimiento. Intel también aumentó el tamaño de caché L1 en sus procesadores Pentium 
-en relación con el 80486. Los Pentium iniciales contenían 16 KB, mientras que el Pentium MMX subió a 32 KB. Naturalmente, estos procesadores también funcionaron a 
-velocidades de reloj más altas.
+\subsection{Pentium}
+
+El \textbf{Pentium} surgió en 1993 como el primer microprocesador \emph{Intel x86} que no seguía el sistema numérico 80x86. Internamente, el \textbf{Pentium} utilizó 
+la arquitectura \textbf{P5}, que fue el primer diseño superescalar \emph{x86} de \emph{Intel}. Aunque el \textbf{Pentium} fue generalmente más rápido que 
+el \textbf{80486} en todos los sentidos, su característica más destacada fue una \textbf{FPU} sustancialmente mejorada. La \textbf{FPU} del \textbf{Pentium} original 
+era hasta 10 veces más rápida que la unidad antigua del \textbf{80486}. Esto se convirtió en una característica aún más significativa en años posteriores cuando Intel 
+lanzó el \textbf{Pentium MMX}. Este microprocesador tenía la misma arquitectura que el \textbf{Pentium} original, pero incluía soporte para el nuevo conjunto de instrucciones 
+MMX SIMD de \emph{Intel} que podría aumentar drásticamente el rendimiento. \emph{Intel} también aumentó el tamaño de caché L1 en sus procesadores \textbf{Pentium} en relación con el \textbf{80486}. 
+Los \textbf{Pentium} iniciales contenían 16 KB, mientras que el \textbf{Pentium MMX} subió a 32 KB. Naturalmente, estos procesadores también funcionaron a velocidades de reloj más altas. 
+\emph{Intel} planeó seguir rápidamente al \textbf{Pentium} con el \textbf{Pentium Pro} basado en su arquitectura \textbf{P6}, pero se encontró con dificultades técnicas. El \textbf{Pentium Pro} 
+fue considerablemente más rápido que el \textbf{Pentium} en operaciones de 32 \emph{bits}, gracias a su diseño \emph{out-of-order}(paradigma en el que el microprocesador ejecuta 
+instrucciones en un orden regido por la disponibilidad de datos de entrada y unidades de ejecución, en lugar de por su orden original en un programa)\brackcite{wikipedia_2022_out_of_order}. En 1997 cuando con el lanzamiento de 
+\textbf{Pentium II} se logró superar casi todos los aspectos negativos del \textbf{Pentium Pro}. Su arquitectura subyacente era similar a la del \textbf{Pentium Pro}, 
+y continuó usando un \emph{papeline} de 14 etapas con varias mejoras en el núcleo para mejorar el IPC(Del inglés \emph{instructions per clock} es la cantidad de instrucciones que es 
+capaz de ejecutar por cada ciclo de reloj el microprocesador). \emph{Intel} planeó continuar luego  del \textbf{Pentium II} con un procesador basado en su arquitectura \emph{Netburst}, 
+pero aún no estaba listo. En cambio, \emph{Intel} volvió a impulsar la arquitectura \textbf{P6} con \textbf{Pentium III}. Gracias a un \emph{pipeline} actualizado y a un 
+aumento en la velocidad del reloj(el \textbf{Intel Pentium III-T Tualatin-256} llegó a alcanzar los 1.13GHz), los procesadores \textbf{Pentium III} superaron a sus 
+homólogos \textbf{Pentium II}.\\ En 2000, la arquitectura \emph{Netburts} de \emph{Intel} finalmente estuvo lista y se puso en producción como \textbf{Pentium 4}. 
+Los microprocesadores de \emph{Intel} llevarían esta arquitecura durante los próximos seis años. La primera implementación de esta arquitecura fue nombrada como 
+\emph{Willamette}, en la cual se basaron los \textbf{Pentium 4} durante los primeros dos años. Sin embargo, este fue un momento difícil para \emph{Intel}, y el chip luchó para 
+superar al \textbf{Pentium III}. \emph{Netburts} permitió frecuencias significativamente más altas y \emph{Willamette} logró alcanzar los 2 GHz, pero el \textbf{Pentium III} 
+a 1,4 GHz fue aún más rápido en algunas tareas. La situación mejoró con el diseño a 130 nm de Intel conocido como \emph{Northwood}, el cual  amplió la frecuencia 
+de reloj hasta los 3,2 GHz y duplicó la memoria caché L2 de 256 KB a 512 KB. \emph{Northwood} se desempeñó significativamente mejor y fue muy competitivo frente a los microprocesadores 
+de \emph{AMD} de esa época.
+En los modelos de gama alta, \emph{Intel} también introdujo su tecnología \textbf{Hyper-Threading}(innovación de hardware que permite que se ejecuten varios subprocesos en cada núcleo, 
+lo que significa que se puede hacer más trabajo en paralelo)\brackcite{WhatIsHy83:online} para mejorar la utilización de recursos en entornos que 
+enfatizaban la multitarea. \textbf{Hyper-Threading} no fue tan beneficioso en \emph{Northwood} como lo es en los procesadores \textbf{Core i7} actuales, 
+pero aumentó el rendimiento en algunos puntos porcentuales.
+\emph{Northwood} llevó la arquitectura \emph{Netburts} desde 2002 hasta 2004, después de lo cual \emph{Intel} lanzó \emph{Prescott} con numerosas mejoras. 
+Usó un proceso de fabricación de 90 nm que permitió a \emph{Intel} aumentar la caché L2 a 1 MB.  \emph{Prescott} tenía un ancho de banda significativamente mayor que \emph{Northwood}, 
+lo cual fue vital para aumentar el rendimiento de \emph{Netburts} \brackcite{sexton_2018_history_of_intel_cpus, }.
+
+
+
+
 \begin{figure}[htb]
 	\centering
 	\includegraphics[scale = 0.15]{Graphics/Intel_Pentium_P5.jpg}
@@ -271,47 +298,13 @@ velocidades de reloj más altas.
 	\label{fig:22}
 \end{figure}
 
-\subsection{P6: El Pentium Pro}
-Intel planeó seguir rápidamente al Pentium con el Pentium Pro basado en su arquitectura P6, pero se encontró con dificultades técnicas. El Pentium Pro fue considerablemente 
-más rápido que el Pentium en operaciones de 32 bits, gracias a su diseño \emph{out-of-order}.  El Pentium Pro presentaba una arquitectura interna significativamente rediseñada 
-que decodificaba instrucciones en microoperaciones,
-\subsection{Pentium II}
-Intel no abandonó la arquitectura P6, sino que esperó hasta 1997 cuando lanzó el Pentium II. El Pentium II logró superar casi todos los aspectos negativos del Pentium Pro. 
-Su arquitectura subyacente era similar a la del Pentium Pro, y continuó usando un \emph{papeline} de 14 etapas con varias mejoras en el núcleo para mejorar el IPC
-(Del inglés \emph{instructions per clock} es la cantidad de instrucciones que es capaz de ejecutar por cada ciclo de reloj el microprocesador).
-
-\subsection{Pentium III}
-Intel planeó continuar con el Pentium II con un procesador basado en su arquitectura Netburst, pero aún no estaba listo. En cambio, Intel volvió a impulsar la 
-arquitectura P6 con Pentium III. El primero de estos procesadores, con el nombre en código "Katmai", era bastante similar al Pentium II en que usaba un cartucho 
-ranurado que contenía caché L2 de menor calidad a la mitad de la velocidad de la CPU. La arquitectura subyacente incorporó otros cambios significativos, ya que varias 
-partes del \emph{pipeline} de 14 etapas se fusionaron, reduciéndolo a 10 etapas. Gracias a un \emph{pipeline} actualizado y a un aumento en la velocidad del 
-reloj(el Intel Pentium III-T Tualatin-256 llegó a alcanzar los 1.13GHz), los procesadores Pentium III superaron a sus homólogos Pentium II.
-
-
-\subsection{Pentium 4}
-En 2000, la arquitectura \emph{Netburts} de Intel finalmente estuvo lista y se puso en producción como Pentium 4. Los microprocesadores de Intel llevaría esta 
-arquitecura durante los próximos seis años. La primera implementación de esta arquitecura se le llamó "Willamette", la cual llevó los Pentium 4 
-durante los primeros dos años. Sin embargo, este fue un momento difícil para Intel, y el chip luchó para superar al Pentium III. \emph{Netburts} permitió 
-frecuencias significativamente más altas y Willamette logró alcanzar los 2 GHz, pero el Pentium III a 1,4 GHz fue aún más rápido en algunas tareas
-de su vida. La situación mejoró con el diseño a 130 nm de Intel conocido como \emph{"Northwood"}, el cual  amplió la frecuencia de reloj hasta los 3,2 GHz y 
-duplicó la memoria caché L2 de 256 KB a 512 KB.\emph{Northwood} se desempeñó significativamente mejor y fue muy competitivo frente a a los microprocesadores 
-de AMD de esa época.
-
-En los modelos de gama alta, Intel también introdujo su tecnología \emph{Hyper-Threading} para mejorar la utilización de recursos en entornos que 
-enfatizaban la multitarea. Hyper-Threading no fue tan beneficioso en Northwood como lo es en los procesadores Core i7 actuales, pero aumentó el 
-rendimiento en algunos puntos porcentuales.
-Northwood llevó la arquitectura \emph{Netburts} desde 2002 hasta 2004, después de lo cual Intel lanzó Prescott con numerosas mejoras. Usó un proceso de 
-fabricación de 90 nm que permitió a Intel aumentar la caché L2 a 1 MB.  Prescott tenía un ancho de banda significativamente mayor que Northwood, 
-lo cual fue vital para aumentar el rendimiento de \emph{Netburts}. Prescott se calentaba  demasiado y consumía demasiada energía. Intel esperaba que el 
-cambio a 90nm aliviara este problema, pero su mayor densidad de transistores dificultaba su enfriamiento. Como no pudía alcanzar frecuencias más altas, 
-los cambios evolutivos de Prescott dañaron  rendimiento general.
 \begin{figure}[htb]
 	\centering
 	\includegraphics[scale = 0.15]{Graphics/Pentium_4_-_SL5TK-3056.jpg}
 	\caption{Intel Pentium 4 Willamette}
 	\label{fig:23}
 \end{figure}
-
+\newpage
 \subsection{Intel Core 2}
 Intel finalmente renunció a su arquitectura \emph{Netburst}. La empresa se dio cuenta de que P6 aún era viable y capaz de ser eficiente y brindar 
 un excelente rendimiento. Reelaboró la arquitectura con su diseño Core. El 27 de julio de 2006 se introdujo La línea de procesadores Core 2.
@@ -330,7 +323,7 @@ empaquetados en un módulo de varios chip(MCM). El tamaño de la memoria caché 
 
 \newpage
 
-\subsection{Nehalem: El primer Core i7}
+\subsection{Intel Core: la llegada de los i3,i5,i7}
 Con el mercado de procesadores en un estado altamente competitivo, Intel no pudo darse el lujo de quedarse quieto por mucho tiempo. 
 Por lo tanto, modificó la arquitectura Core para crear Nehalem, que agrega numerosas mejoras. El controlador de caché se rediseñó y 
 la caché L2 se redujo a 256 KB por núcleo. Sin embargo, esto no afectó el rendimiento, ya que Intel agregó entre 4 y 12 MB de caché L3 
@@ -355,12 +348,48 @@ ntel vendió CPU Nehalem bajo las marcas Celeron, Pentium, Core i3, Core i5, Cor
 
 
 
-\subsection{Mejoras en los Intel Core}
+\textbf{Mejoras en las próximas generaciones:}\\
 La segunda, tercera, cuarta, quinta , sexta y séptima generación de los \emph{Intel Core} dieron un salto significativo en rendimiento, mejorarando
 el IPC, subiendo la frecuencia de reloj,  con   procesos de fabricación  más eficientes que llegan hasta los 14 nm en la sexta y séptima generación.
 Aumentaron la memoria caché, principalmente la L3(hasta 8MB compartidos en la séptima generación). Se mejoraron los gráficos integrados y se introdujeron 
 compatibilidad con nuevas tecnologías como \emph{Intel Optane} y \emph{Thunderbolt 3}.\\
-Con la octava generación (\emph{Coffee Lake}) se añadieron más núcleos. Ahora los Core i3 pasan a ser 
+Con la octava generación (\emph{Coffee Lake}), lanzada en 2017 se añadieron más núcleos. Se introdujeron microprocesadorer Core i5 y Core i7 con seis núcleos 
+(junto con \emph{hyper-threading} en el caso de los i7) y microprocesadores Core i3 con cuatro núcleos y sin \emph{hyper-threading}.
+La novena generación, lanzada en 2018 fue un refrescamiento de \emph{Coffe Lake}. Las principales diferencias con respecto a la 
+octava generación (además del aumento de frecuencia del reloj) son:
+\begin{itemize}
+	\item Las Core i7 contienen 8/8 núcleos/hilos en comparación con los 6/12 que tenía los \emph{Core i7} de octava generación.
+	\item Los Core i3 están equipados con tecnología \emph{Turbo Boost}. 	
+\end{itemize}
+
+Con la décima y oncena generación(Comet Lake y Rocket Lake respectivamente)  los Core i7 pasaron a tener 8 núcleos/16 hilos mientras los Core i5  
+pasaron a tener 6 núcleos/12 hilos. Estas dos generaciones representaron una ligera mejora a \emph{Coffe Lake}.
+
+\subsection{Alder Lake: la arquitecura híbrida}
+
+\emph{Intel} anunció oficialmente la decimosegunda generación de los procesadores \textbf{Intel Core} (\emph{Alder Lake}) en 2021, 
+basados en una arquitectura híbrida que utiliza núcleos de rendimiento  y núcleos eficientes.
+
+Por primera vez \emph{Intel} ha apostado en su gama principal de procesadores por el uso de dos tipos de núcleo de diferente 
+rendimiento y consumo para acelerar las tareas del procesador:
+
+\begin{itemize}
+	\item Los \textbf{P-Cores} (\emph{Golden Cove}) son núcleos de gran tamaño y que ofrecen un gran rendimiento, pero a cambio de ser menos eficientes energéticamente.
+	\item Los \textbf{E-Cores} (\emph{Gracemont}) son núcleos de menor tamaño, lo que le permite a \emph{Intel} colocar una mayor cantidad en un mismo espacio y 
+	tienen menor consumo energético.
+\end{itemize}
+
+
+Dependiendo del modelo de Intel Core 12 la cantidad de \textbf{P-Cores} y \textbf{E-Cores} varía, pero ambos trabajan al unísono y de manera coordinada. 
+Para esto último hacen uso de una caché de 30 MB de tercer nivel(L3), la cual no solo le da acceso al mismo espacio de memoria 
+a ambos tipos de núcleos, sino que además les permite trabajar conjuntamente en la ejecución de los procesos a ejecutar \brackcite{wikipedia_2022_alder_lake,roca_2021_alder_lake}.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale = 0.2]{Graphics/Intel_CPU_Core_i7_12700K_Alder_Lake.jpg}
+	\caption{Intel Core i7 12700K Alder Lake}
+	\label{fig:26}
+\end{figure}
 
 \section{AMD: El camino hacia los Ryzen}
 \section{Eficiencia por watt y la autonomía de los microprocesadores}
