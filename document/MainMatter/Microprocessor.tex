@@ -162,10 +162,12 @@ compilador de Ada apresurado y, por lo tanto, subóptimo.
 	\caption{\textbf{Motorola 68K}}
 	\label{fig:17}
 \end{figure}
+
 \subsection{80386: x86 se convierte a 32-bit}
 El primer procesador x86 de 32 bits de Intel fue el 80386(renombrado más tarde como i386), lanzado en 1985. Una ventaja clave que tenía este procesador era su bus de 
 direcciones de 32 bits que le permitía admitir hasta 4 GB de memoria del sistema. Aunque esto era mucho más de lo que nadie estaba 
 usando en ese momento, las limitaciones de RAM a menudo perjudican el rendimiento de los procesadores x86 anteriores y de la competencia.
+
 \begin{figure}[htb]
 	\centering
 	\includegraphics[scale = 0.1]{Graphics/Intel_i386DX.jpg}
@@ -173,6 +175,7 @@ usando en ese momento, las limitaciones de RAM a menudo perjudican el rendimient
 	\label{fig:18}
 \end{figure}
 \newpage
+
 \section{El arribo de los 64 bits}
 Antes que se introdujeran los primeros microprocesadores de 64 bits destinados a las computadoras peronsales, desde principios de la década de
 1990 se utilizaron diseños de microprocesadores de 64 bits en varios mercados. En 1991 \textbf{MIPS Computer Systems} produce el primer \textbf
@@ -187,7 +190,6 @@ de procesadores \textbf{Opteron} y \textbf{Athlon 64}, fue la primera basada en 
 arquitectura \textbf{EM64T}(luego fue renombrada a \textbf{Intel 64}), que es una versión de 64 bits de la arquitectura x86. La primera línea
 de procesadores basados en \textbf{EM64T} fue la línea \textbf{Pentium 4}. Ambas versiones pueden ejecutar aplicaciones heredadas de 32 bits sin ninguna
 penalización en el rendimiento, así como el nuevo software de 64 bits.
-
 
 \begin{figure}[htb]
 	\centering
@@ -232,10 +234,12 @@ llevó CISC a un nivel completamente nuevo de complejidad\brackcite{sexton_2018_
 \subsection{i960: El primer microprocesador RISC de Intel}
 RISC (del inglés Reduced Instruction Set Computer) es un tipo de diseño de CPU generalmente utilizado en microprocesadores o 
 con las siguientes características fundamentales:
+
 \begin{itemize}
 	\item Instrucciones de tamaño fijo y presentadas en un reducido número de formatos.
 	\item Solo las instrucciones de carga y almacenamiento acceden a la memoria de datos.
 \end{itemize}
+
 RISC está a favor de conjuntos de instrucciones pequeñas y simples que toman menor tiempo para ejecutarse.
 Intel creó su primer procesador RISC en 1984 \brackcite{wikipedia_2022_RISC}. No fue diseñado como un competidor directo de los procesadores 
 x86 de la empresa porque estaba pensado como una solución integrada segura. Internamente, era una arquitectura superescalar de 32 bits que 
@@ -249,6 +253,7 @@ momento había sido una unidad de procesamiento funcional independiente. Al move
 drásticamente. El 80486 también usó una interfaz FSB(front-side bus)\brackcite{wikipedia_2022_front_side_bus} más rápida para aumentar el ancho de banda, y el núcleo 
 tenía varios otros ajustes para impulsar el IPC. Estos cambios aumentaron significativamente el rendimiento del 80486 y los modelos de gama alta fueron varias 
 veces más rápidos que el 80386 anterior\brackcite{sexton_2018_history_of_intel_cpus, }. 
+
 \begin{figure}[htb]
 	\centering
 	\includegraphics[scale = 0.15]{Graphics/Intel_80486sx.jpg}
@@ -264,6 +269,7 @@ significativa en años posteriores cuando Intel lanzó el Pentium MMX. Este proc
 nuevo conjunto de instrucciones MMX SIMD de Intel que podría aumentar drásticamente el rendimiento. Intel también aumentó el tamaño de caché L1 en sus procesadores Pentium 
 en relación con el 80486. Los Pentium iniciales contenían 16 KB, mientras que el Pentium MMX subió a 32 KB. Naturalmente, estos procesadores también funcionaron a 
 velocidades de reloj más altas.
+
 \begin{figure}[htb]
 	\centering
 	\includegraphics[scale = 0.15]{Graphics/Intel_Pentium_P5.jpg}
@@ -275,6 +281,7 @@ velocidades de reloj más altas.
 Intel planeó seguir rápidamente al Pentium con el Pentium Pro basado en su arquitectura P6, pero se encontró con dificultades técnicas. El Pentium Pro fue considerablemente 
 más rápido que el Pentium en operaciones de 32 bits, gracias a su diseño \emph{out-of-order}.  El Pentium Pro presentaba una arquitectura interna significativamente rediseñada 
 que decodificaba instrucciones en microoperaciones,
+
 \subsection{Pentium II}
 Intel no abandonó la arquitectura P6, sino que esperó hasta 1997 cuando lanzó el Pentium II. El Pentium II logró superar casi todos los aspectos negativos del Pentium Pro. 
 Su arquitectura subyacente era similar a la del Pentium Pro, y continuó usando un \emph{papeline} de 14 etapas con varias mejoras en el núcleo para mejorar el IPC
@@ -286,7 +293,6 @@ arquitectura P6 con Pentium III. El primero de estos procesadores, con el nombre
 ranurado que contenía caché L2 de menor calidad a la mitad de la velocidad de la CPU. La arquitectura subyacente incorporó otros cambios significativos, ya que varias 
 partes del \emph{pipeline} de 14 etapas se fusionaron, reduciéndolo a 10 etapas. Gracias a un \emph{pipeline} actualizado y a un aumento en la velocidad del 
 reloj(el Intel Pentium III-T Tualatin-256 llegó a alcanzar los 1.13GHz), los procesadores Pentium III superaron a sus homólogos Pentium II.
-
 
 \subsection{Pentium 4}
 En 2000, la arquitectura Netburst de Intel finalmente estuvo lista y se puso en producción como Pentium 4. Los microprocesadores de Intel llevaría esta 
@@ -305,6 +311,7 @@ fabricación de 90 nm que permitió a Intel aumentar la caché L2 a 1 MB.  Presc
 lo cual fue vital para aumentar el rendimiento de Netburst. Prescott se calentaba  demasiado y consumía demasiada energía. Intel esperaba que el 
 cambio a 90nm aliviara este problema, pero su mayor densidad de transistores dificultaba su enfriamiento. Como no pudía alcanzar frecuencias más altas, 
 los cambios evolutivos de Prescott dañaron  rendimiento general.
+
 \begin{figure}[htb]
 	\centering
 	\includegraphics[scale = 0.15]{Graphics/Pentium_4_-_SL5TK-3056.jpg}
@@ -326,9 +333,7 @@ El tamaño de la memoria caché  L2 de los Core 2 iba desde los 512 KB a los 12 
 	\caption{Intel Core 2 QuadQ6600}
 	\label{fig:24}
 \end{figure}
-
 \newpage
-
 
 \section{AMD: El camino hacia los Ryzen}
 \section{Eficiencia por watt y la autonomía de los microprocesadores}
