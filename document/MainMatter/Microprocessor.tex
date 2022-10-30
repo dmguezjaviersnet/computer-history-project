@@ -203,7 +203,7 @@ penalización en el rendimiento, así como el nuevo software de 64 bits.
 	\label{fig:20}
 \end{figure}
 
-\section{Intel: el camino hacia los Intel Core}
+\section{Intel: el camino hacia los \emph{Intel Core i}}
 \emph{Intel Corporation} es una corporación multinacional estadounidense y una empresa de tecnología con sede en \emph{Santa Clara, California}. 
 Es el fabricante de chips semiconductores más grande del mundo por ingresos y es uno de los desarrolladores de la serie x86 
 de conjuntos de instrucciones x86 \brackcite{wikipedia_2022_x86_ISA}, los conjuntos de instrucciones que se encuentran en la mayoría de las 
@@ -278,104 +278,57 @@ que decodificaba instrucciones en microoperaciones,
 \subsection{Pentium II}
 Intel no abandonó la arquitectura P6, sino que esperó hasta 1997 cuando lanzó el Pentium II. El Pentium II logró superar casi todos los aspectos negativos del Pentium Pro. 
 Su arquitectura subyacente era similar a la del Pentium Pro, y continuó usando un \emph{papeline} de 14 etapas con varias mejoras en el núcleo para mejorar el IPC
-(Del inglés instrucction per clock es la cantidad de instrucciones que es capaz de ejecutar por cada ciclo de reloj).
+(Del inglés \emph{instructions per clock} es la cantidad de instrucciones que es capaz de ejecutar por cada ciclo de reloj el microprocesador).
 
 \subsection{Pentium III}
+Intel planeó continuar con el Pentium II con un procesador basado en su arquitectura Netburst, pero aún no estaba listo. En cambio, Intel volvió a impulsar la 
+arquitectura P6 con Pentium III. El primero de estos procesadores, con el nombre en código "Katmai", era bastante similar al Pentium II en que usaba un cartucho 
+ranurado que contenía caché L2 de menor calidad a la mitad de la velocidad de la CPU. La arquitectura subyacente incorporó otros cambios significativos, ya que varias 
+partes del \emph{pipeline} de 14 etapas se fusionaron, reduciéndolo a 10 etapas. Gracias a un \emph{pipeline} actualizado y a un aumento en la velocidad del 
+reloj(el Intel Pentium III-T Tualatin-256 llegó a alcanzar los 1.13GHz), los procesadores Pentium III superaron a sus homólogos Pentium II.
 
 
-\subsection{Pentium IV}
+\subsection{Pentium 4}
+En 2000, la arquitectura Netburst de Intel finalmente estuvo lista y se puso en producción como Pentium 4. Los microprocesadores de Intel llevaría esta 
+arquitecura durante los próximos seis años. La primera implementación de esta arquitecura se le llamó "Willamette", la cual llevó los Pentium 4 
+durante los primeros dos años. Sin embargo, este fue un momento difícil para Intel, y el chip luchó para superar al Pentium III. Netburst permitió 
+frecuencias significativamente más altas y Willamette logró alcanzar los 2 GHz, pero el Pentium III a 1,4 GHz fue aún más rápido en algunas tareas
+de su vida. La situación mejoró con el diseño a 130 nm de Intel conocido como \emph{"Northwood"}, el cual  amplió la frecuencia de reloj hasta los 3,2 GHz y 
+duplicó la memoria caché L2 de 256 KB a 512 KB.\emph{Northwood} se desempeñó significativamente mejor y fue muy competitivo frente a a los microprocesadores 
+de AMD de esa época.
+
+En los modelos de gama alta, Intel también introdujo su tecnología \emph{Hyper-Threading} para mejorar la utilización de recursos en entornos que 
+enfatizaban la multitarea. Hyper-Threading no fue tan beneficioso en Northwood como lo es en los procesadores Core i7 actuales, pero aumentó el 
+rendimiento en algunos puntos porcentuales.
+Northwood llevó la arquitectura Netburst desde 2002 hasta 2004, después de lo cual Intel lanzó Prescott con numerosas mejoras. Usó un proceso de 
+fabricación de 90 nm que permitió a Intel aumentar la caché L2 a 1 MB.  Prescott tenía un ancho de banda significativamente mayor que Northwood, 
+lo cual fue vital para aumentar el rendimiento de Netburst. Prescott se calentaba  demasiado y consumía demasiada energía. Intel esperaba que el 
+cambio a 90nm aliviara este problema, pero su mayor densidad de transistores dificultaba su enfriamiento. Como no pudía alcanzar frecuencias más altas, 
+los cambios evolutivos de Prescott dañaron  rendimiento general.
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale = 0.15]{Graphics/Pentium_4_-_SL5TK-3056.jpg}
+	\caption{Intel Pentium 4 Willamette}
+	\label{fig:23}
+\end{figure}
+
+\subsection{Intel Core 2}
+Intel finalmente renunció a su arquitectura Netburst. La empresa se dio cuenta de que P6 aún era viable y capaz de ser eficiente y brindar 
+un excelente rendimiento. Reelaboró la arquitectura con su diseño Core. El 27 de julio de 2006 se introdujo La línea de procesadores Core 2.
+Intel Core 2 abarca una gama de microprocesadores Intel de consumo de 64 bits x86-64 de uno, dos y cuatro 
+núcleos basados en la microarquitectura Core. Los modelos de uno y dos núcleos son de un solo \emph{die}(parte donde se encuentra todo el circuito y los componentes internos del microprocesador), 
+mientras que los modelos de cuatro núcleos comprenden dos \emph{dies}, cada una con dos núcleos, empaquetados en un módulo de varios chip(MCM).
+El tamaño de la memoria caché  L2 de los Core 2 iba desde los 512 KB a los 12 MB.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale = 0.8]{Graphics/IntelCore_2_Q6600.jpeg}
+	\caption{Intel Core 2 QuadQ6600}
+	\label{fig:24}
+\end{figure}
+
+\newpage
+
 
 \section{AMD: El camino hacia los Ryzen}
 \section{Eficiencia por watt y la autonomía de los microprocesadores}
-
-% \begin{figure}
-% 	\centering
-% 	\begin{subfigure}[b]
-% 		\centering
-% 		\includegraphics[scale = 0.1]{Graphics/CPU-NUS_01-Nintendo64.jpg}
-% 		\caption{Microprocesador VR4300 de la Nintendo 64}
-% 		\label{Microprocesador VR4300 de la Nintendo 64}
-% 	\end{subfigure}
-% 	\hfill
-% 	\begin{subfigure}[b]
-% 		\centering
-% 		\includegraphics[scale = 0.1]{Graphics/AMD_Athlon_64_3200+_ADA3200AEP5AP.jpg}
-% 		\caption{AMD Athlon 64 3200}
-% 		\label{AMD Athlon 64 3200}
-% 	\end{subfigure}
-% 	\caption{Three simple graphs}
-% 	\label{fig:18}
-% \end{figure}
-
-
-% En 1968, Vic Poor y Harry Pyle de CTC 
-% desarrollaron el diseño original para el conjunto de instrucciones y el funcionamiento del procesador. En 1969, CTC contrató a dos empresas, Intel y Texas Instruments, para 
-% realizar una implementación de un solo chip, conocida como CTC 1201. A fines de 1970 o principios de 1971, TI se retiró al no poder fabricar una pieza confiable. 
-% En 1970, con Intel aún por entregar la parte, CTC optó por usar su propia implementación en el Datapoint 2200, usando en su lugar la lógica TTL tradicional 
-% (por lo tanto, la primera máquina que ejecutó el "código 8008" no era de hecho un microprocesador y se entregó el año anterior). La versión de Intel del microprocesador 
-% 1201 llegó a fines de 1971, pero fue demasiado tarde, lenta y requirió una cantidad de chips de soporte adicionales. CTC no tenía interés en usarlo. CTC había contratado
-% originalmente a Intel por el chip y les habría debido 50 000 dólares estadounidenses (equivalente a 334 552 dólares en 2021) por su trabajo de diseño.[43] 
-% Para evitar pagar por un chip que no querían (y no podían usar), CTC liberó a Intel de su contrato y les permitió el uso gratuito del diseño.[43] Intel 
-% lo comercializó como 8008 en abril de 1972, como el primer microprocesador de 8 bits del mundo. Fue la base del famoso kit de computadora "Mark-8". 
-
-% En 1973, Intel lanzó el primer procesador de 8 bits ampliamente utilizado, llamado Intel 8008. El 8008 salió con 3.500 transistores. . En este sistema, el bus de datos y 
-% las direcciones eran unidades de 8 bits. El Intel 4004 fue seguido en 1972 por el Intel 8008, el primer microprocesador de 8 bits del mundo. Sin embargo, el 8008 no fue 
-% una extensión del diseño del 4004, sino la culminación de un proyecto de diseño separado en Intel, que surgió de un contrato con Computer Terminals Corporation, de San Antonio TX, 
-% por un chip para una terminal que estaban diseñando, [42] el Datapoint 2200: los aspectos fundamentales del diseño no provinieron de Intel sino de CTC.
-
-
-
- % Pronto surgió un desafío. “Cuanto más aprendía sobre este diseño, más me 
-% preocupaba que Intel pudiera haber emprendido más de lo que estaba preparado para entregar”, recordó Hoff. "La cantidad de chips y su 
-% complejidad fue mucho mayor de lo que esperaba". No había forma de que Intel pudiera construirlos al precio acordado. .
-% Hoff propuso que Intel diseñara un solo chip lógico que pudiera realizar casi todas las tareas que quería Busicom
-
-% “Bueno, si hay algo que se te ocurra para simplificar el diseño, ¿por qué no lo persigues?”, sugirió Noyce.
-% . 
-% “Sé que esto se puede hacer”, dijo sobre el chip de propósito general. “Se puede hacer para emular una computadora”. 
-% Noyce le dijo que lo intentara. 
-% Antes de que pudieran vender la idea a Busicom, Noyce se dio cuenta de que tenía que convencer a alguien que podría oponerse 
-% aún más: Andy Grove, quien nominalmente trabajaba para él. Parte de lo que Grove vio como su mandato era mantener a Intel enfocado.
-
-% Noyce diría que sí a casi cualquier cosa; El trabajo de Grove era decir que no. Cuando Noyce se acercó al espacio de trabajo de Grove y se 
-% sentó en la esquina de su escritorio, Grove se puso inmediatamente en guardia. Sabía que el esfuerzo de Noyce por parecer indiferente era una 
-% señal de que algo estaba pasando. “Estamos comenzando otro proyecto”, dijo Noyce, fingiendo reír.53 La primera reacción de Grove fue decirle a 
-% Noyce que estaba loco. Intel era una empresa incipiente que todavía luchaba por fabricar sus chips de memoria y no necesitaba distracciones. Pero 
-% después de escuchar a Noyce describir la idea de Hoff, Grove se dio cuenta de que la resistencia probablemente estaba mal y definitivamente era inútil.
-% En septiembre de 1969, Hoff y su colega Stan Mazor habían esbozado la arquitectura de un chip lógico de uso general que podía seguir instrucciones de programación. 
-%  Noyce y Hoff presentaron la opción a los ejecutivos de Busicom, 
-% quienes acordaron que era el mejor enfoque.
-
-% .  Fue un punto de negociación que Bill Gates y Microsoft emularían con IBM una década después. 
-% A cambio de darle a Busicom un buen precio, Noyce insistió en que Intel retuviera los derechos del nuevo chip y se le permitiera licenciarlo a otras compañías 
-% para fines distintos a la fabricación de una calculadora. 
-
-% Se dio cuenta de que un chip que pudiera programarse para realizar cualquier función lógica se convertiría en un componente estándar en los dispositivos electrónicos, 
-% de la misma manera que las piezas de madera de dos por cuatro eran un componente estándar en la construcción de casas.
-% Reemplazaría los chips personalizados, lo que significaba que podría fabricarse a granel y, por lo tanto, su precio disminuiría continuamente. También marcaría el 
-% comienzo de un cambio más sutil en la industria electrónica: la importancia de los ingenieros de hardware, que diseñaron la 
-
-% ubicación de los componentes en una placa de circuito, comenzó a ser suplantada por una nueva generación, los ingenieros de software, cuyo trabajo era programar 
-% Debido a que era esencialmente un procesador de computadora en un chip, el nuevo dispositivo se denominó microprocesador. En noviembre de 1971 Intel dio a conocer 
-% el producto, el Intel 4004, al público. Sacó anuncios en revistas especializadas que anunciaban “una nueva era de electrónica integrada: ¡una computadora microprogramable en 
-% un chip!” Tenía un precio de \$ 200 y los pedidos, así como miles de solicitudes del manual, comenzaron a llegar. Noyce asistía a una exhibición de computadoras en 
-% Las Vegas el día del anuncio y estaba emocionado de ver a los clientes potenciales abarrotar la suite de Intel.
-
-% 1969: La misión
-% En 1969, Nippon Calculating Machine Corporation se acercó a Intel para diseñar 12 chips personalizados para su nueva calculadora de impresión Busicom 141-PF*. 
-% Los ingenieros de Intel sugirieron una familia de solo cuatro chips, incluido uno que podría programarse para su uso en una variedad de productos, poniendo en 
-% marcha una hazaña de ingeniería que alteró drásticamente el curso de la electrónica.
-
-
-% 1971: era de la electrónica integrada
-% Intel compró los derechos de Nippon Calculating Machine Corporation y lanzó el procesador Intel® 4004 y su conjunto de chips con un anuncio en la edición del 15 de noviembre 
-% de 1971 de Electronic News: "Anunciando una nueva era en la electrónica integrada".
-% Fue entonces cuando Intel® 4004 se convirtió en el primer procesador programable de uso general del mercado: un "bloque de construcción" que los ingenieros podían comprar y 
-% luego personalizar con software para realizar diferentes funciones en una amplia variedad de dispositivos electrónicos.
-
-% oderosamente pequeño, incluso en 1971
-% Este microprocesador revolucionario, del tamaño de la uña del dedo meñique, entregaba la misma potencia de cómputo que la primera computadora electrónica construida en 
-% 1946, que llenó una habitación entera.
-
-
-
