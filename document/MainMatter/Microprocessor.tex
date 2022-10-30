@@ -130,7 +130,7 @@ de 16 bits y una cola de precarga de 6 bytes más larga. También podía ejecuta
 ese momento estaba diseñado para procesadores de 8 bits). El bus de direcciones se amplió a 20 bits, lo que permitió al \textbf{8086} acceder
 a hasta 1 MB de memoria y, por lo tanto, aumentar el rendimiento. El \textbf{8086} también se convirtió en el primer procesador x86 y utilizó
 la primera revisión del x86 ISA \brackcite{wikipedia_2022_x86_ISA}, en el que se han basado casi todos los procesadores creados por \emph{AMD}
-o \emph{Intel} desde la introducción del \textbf{8086} \brackcite{wikipedia_2022_Microprocesador, sexton_2018_history_intel_cpus, wikipedia_2022_intel_8086}.
+o \emph{Intel} desde la introducción del \textbf{8086} \brackcite{wikipedia_2022_Microprocesador, sexton_2018_history_of_intel_cpus,  wikipedia_2022_intel_8086}.
 
 \begin{figure}[htb]
 	\centering
@@ -193,7 +193,7 @@ penalización en el rendimiento, así como el nuevo software de 64 bits.
 	\centering
 	\includegraphics[scale = 0.15]{Graphics/CPU-NUS_01-Nintendo64.jpg}
 	\caption{\textbf{Microprocesador VR4300} de la \textbf{Nintendo 64}}
-	\label{fig:18}
+	\label{fig:19}
 \end{figure}
 
 \begin{figure}[htb]
@@ -289,9 +289,9 @@ reloj(el Intel Pentium III-T Tualatin-256 llegó a alcanzar los 1.13GHz), los pr
 
 
 \subsection{Pentium 4}
-En 2000, la arquitectura Netburst de Intel finalmente estuvo lista y se puso en producción como Pentium 4. Los microprocesadores de Intel llevaría esta 
+En 2000, la arquitectura \emph{Netburts} de Intel finalmente estuvo lista y se puso en producción como Pentium 4. Los microprocesadores de Intel llevaría esta 
 arquitecura durante los próximos seis años. La primera implementación de esta arquitecura se le llamó "Willamette", la cual llevó los Pentium 4 
-durante los primeros dos años. Sin embargo, este fue un momento difícil para Intel, y el chip luchó para superar al Pentium III. Netburst permitió 
+durante los primeros dos años. Sin embargo, este fue un momento difícil para Intel, y el chip luchó para superar al Pentium III. \emph{Netburts} permitió 
 frecuencias significativamente más altas y Willamette logró alcanzar los 2 GHz, pero el Pentium III a 1,4 GHz fue aún más rápido en algunas tareas
 de su vida. La situación mejoró con el diseño a 130 nm de Intel conocido como \emph{"Northwood"}, el cual  amplió la frecuencia de reloj hasta los 3,2 GHz y 
 duplicó la memoria caché L2 de 256 KB a 512 KB.\emph{Northwood} se desempeñó significativamente mejor y fue muy competitivo frente a a los microprocesadores 
@@ -300,9 +300,9 @@ de AMD de esa época.
 En los modelos de gama alta, Intel también introdujo su tecnología \emph{Hyper-Threading} para mejorar la utilización de recursos en entornos que 
 enfatizaban la multitarea. Hyper-Threading no fue tan beneficioso en Northwood como lo es en los procesadores Core i7 actuales, pero aumentó el 
 rendimiento en algunos puntos porcentuales.
-Northwood llevó la arquitectura Netburst desde 2002 hasta 2004, después de lo cual Intel lanzó Prescott con numerosas mejoras. Usó un proceso de 
+Northwood llevó la arquitectura \emph{Netburts} desde 2002 hasta 2004, después de lo cual Intel lanzó Prescott con numerosas mejoras. Usó un proceso de 
 fabricación de 90 nm que permitió a Intel aumentar la caché L2 a 1 MB.  Prescott tenía un ancho de banda significativamente mayor que Northwood, 
-lo cual fue vital para aumentar el rendimiento de Netburst. Prescott se calentaba  demasiado y consumía demasiada energía. Intel esperaba que el 
+lo cual fue vital para aumentar el rendimiento de \emph{Netburts}. Prescott se calentaba  demasiado y consumía demasiada energía. Intel esperaba que el 
 cambio a 90nm aliviara este problema, pero su mayor densidad de transistores dificultaba su enfriamiento. Como no pudía alcanzar frecuencias más altas, 
 los cambios evolutivos de Prescott dañaron  rendimiento general.
 \begin{figure}[htb]
@@ -313,12 +313,13 @@ los cambios evolutivos de Prescott dañaron  rendimiento general.
 \end{figure}
 
 \subsection{Intel Core 2}
-Intel finalmente renunció a su arquitectura Netburst. La empresa se dio cuenta de que P6 aún era viable y capaz de ser eficiente y brindar 
+Intel finalmente renunció a su arquitectura \emph{Netburst}. La empresa se dio cuenta de que P6 aún era viable y capaz de ser eficiente y brindar 
 un excelente rendimiento. Reelaboró la arquitectura con su diseño Core. El 27 de julio de 2006 se introdujo La línea de procesadores Core 2.
 Intel Core 2 abarca una gama de microprocesadores Intel de consumo de 64 bits x86-64 de uno, dos y cuatro 
-núcleos basados en la microarquitectura Core. Los modelos de uno y dos núcleos son de un solo \emph{die}(parte donde se encuentra todo el circuito y los componentes internos del microprocesador), 
-mientras que los modelos de cuatro núcleos comprenden dos \emph{dies}, cada una con dos núcleos, empaquetados en un módulo de varios chip(MCM).
-El tamaño de la memoria caché  L2 de los Core 2 iba desde los 512 KB a los 12 MB.
+núcleos basados en la microarquitectNehalem: El primer Core i7.ura Core. Los modelos de uno y dos núcleos son de un solo \emph{die}(parte donde se encuentra 
+todo el circuito y los componentes internos del microprocesador), mientras que los modelos de cuatro núcleos comprenden dos \emph{dies}, cada una con dos núcleos, 
+empaquetados en un módulo de varios chip(MCM). El tamaño de la memoria caché  L2 de los Core 2 iba desde los 512 KB a los 
+12 MB \brackcite{wikipedia_2022_intel_core_2,sexton_2018_history_of_intel_cpus}.
 
 \begin{figure}[htb]
 	\centering
@@ -329,6 +330,26 @@ El tamaño de la memoria caché  L2 de los Core 2 iba desde los 512 KB a los 12 
 
 \newpage
 
+\section{Nehalem: El primer Core i7}
+Con el mercado de procesadores en un estado altamente competitivo, Intel no pudo darse el lujo de quedarse quieto por mucho tiempo. 
+Por lo tanto, modificó la arquitectura Core para crear Nehalem, que agrega numerosas mejoras. El controlador de caché se rediseñó y 
+la caché L2 se redujo a 256 KB por núcleo. Sin embargo, esto no afectó el rendimiento, ya que Intel agregó entre 4 y 12 MB de caché L3 
+compartidos entre todos los núcleos. Las CPU basadas en Nehalem aparecieron entre uno y cuatro núcleos, y la familia seLa última gran ventaja que tuvo Nehalem sobre la arquitectura Core fue que marcó el regreso de la tecnología Hyper-Threading. Gracias a esta y muchas otras mejoras, Nehalem pudo funcionar hasta el doble de rápido que los procesadores Core 2 en cargas de trabajo con muchos subprocesos. Intel vendió CPU Nehalem bajo las marcas Celeron, Pentium, Core i3, Core i5, Core i7 y Xeon. construyó 
+con tecnología de 45 nm.
+Nehalem funcionó a frecuencias de reloj comparables a Core 2. 
+Nehalem también fue el primer procesador de Intel en implementar \emph{Turbo Boost} (característica que permite aumentar automáticamente la frecuencia 
+cuando el sistema operativo solicita el estado de mayor rendimiento del microprocesador). A
+unque el reloj base del procesador Nehalem más rápido alcanzó un máximo de 3,33 GHz, podría operar a 3,6 GHz por períodos cortos gracias a esta 
+nueva tecnología. La última gran ventaja que tuvo Nehalem sobre la arquitectura \emph{Core 2} fue que marcó el regreso de la tecnología \emph{Hyper-Threading}
+(innovación de hardware de Intel que permite que se ejecuten múltiples subprocesos en cada núcleo, lo que significa que se puede hacer más trabajo en paralelo)\brackcite{WhatIsHy83:online}. 
+Gracias a esta y muchas otras mejoras, Nehalem pudo funcionar hasta el doble de rápido que los procesadores Core 2 en cargas de trabajo con muchos subprocesos. Intel vendió CPU Nehalem bajo las marcas Celeron, Pentium, Core i3, Core i5, Core i7 y Xeon.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale = 0.2]{Graphics/Intel_core_i7_940_top_R7309478_wp.jpg}
+	\caption{Intel Core i7 940  Nehalem}
+	\label{fig:25}
+\end{figure}
 
 \section{AMD: El camino hacia los Ryzen}
 \section{Eficiencia por watt y la autonomía de los microprocesadores}
