@@ -1,24 +1,22 @@
 \chapter{El microprocesador}\label{chapter:microprocesador}
 
 El \textbf{microprocesador} es un \textbf{procesador} de computadora, donde la lógica del procesamiento de datos y el control
-están incluidos en un solo circuito integrado, o en un pequeño número de circuitos integrados. El \textbf{microprocesador}
-contiene los circuitos aritméticos, lógicos y de control necesarios para realizar las funciones de la unidad central de
-procesamiento  de una computadora. El circuito integrado es capaz de interpretar y ejecutar instrucciones de programa y
-realizar operaciones aritméticas. El \textbf{microprocesador} es un circuito integrado digital multipropósito, controlado
-por reloj y basado en registros que acepta datos binarios como entrada, los procesa de acuerdo con las instrucciones
-almacenadas en su memoria y proporciona resultados (también en forma binaria) como salida. Un \textbf{microprocesador}
-hipotético mínimamente funcional podría incluir solo una \textbf{ALU}(\emph{Arithmetic Logic Unit}) y una sección lógica
-de control. La \textbf{ALU} realiza sumas, restas y operaciones como \textbf{AND} y \textbf{OR}. Cada operación de la
+están incluidos en un solo circuito integrado, o en un pequeño número de circuitos integrados. El circuito integrado es capaz 
+de interpretar y ejecutar instrucciones de programa y realizar operaciones aritméticas. El \textbf{microprocesador} es un 
+circuito integrado digital multipropósito, controlado por reloj y basado en registros que acepta datos binarios como entrada, 
+los procesa de acuerdo con las instrucciones almacenadas en su memoria y proporciona resultados (también en forma binaria) 
+como salida. Un \textbf{microprocesador} hipotético mínimamente funcional podría incluir solo una \textbf{ALU}(\emph{Arithmetic Logic Unit}) 
+y una sección lógica de control. La \textbf{ALU} realiza sumas, restas y operaciones como \textbf{AND} y \textbf{OR}. Cada operación de la
 \textbf{ALU} establece uno o más \emph{flags} en un registro de estados, que indican los resultados de la última operación
 (por ejemplo, si el resultado es cero, si es negativo, si hay desbordamiento, etc.). La lógica de control recupera los
-código de instrucción desde la memoria e inicia la secuencia de operaciones necesarias parar que la \textbf{ALU} lleve a
+código de instrucción desde la memoria e inicia la secuencia de operaciones necesarias para que la \textbf{ALU} lleve a
 cabo la instrucción \brackcite{wikipedia_2022_Microprocesador}.\\ Antes de los microprocesadores las computadoras pequeñas
 se construían utilizando  \emph{racks} de placas de circuito con muchos circuitos integrados de mediana y pequeña escala,
 generalmente del tipo \textbf{TTL}\emph{(Transistor-Transistor Logic)} \brackcite{wikipedia_2022_ttl}. Los microprocesadores
 combinaron esto en uno o unos pocos circuitos integrados a gran escala.\\ El incremento continuo de las capacidades de los
 microprocesadores desde  que se empezaron a fabricar ha dejado otras formas de computadoras casi complemtamente obsoletas,
-con uno o más microprocesadores usados en todo desde pequeños sistemas embebidos y dispostivos portátiles hasta los enormes
-\emph{mainframes} y las supercomputadoras
+con uno o más microprocesadores usados en todo desde pequeños sistemas embebidos y dispostivos portátiles hasta en los enormes
+\emph{mainframes} y supercomputadoras.
 
 \section{Surgimiento del microprocesadaor}
 Las invenciones a veces ocurren cuando las personas se enfrentan a un problema y luchan por resolverlo. En otras ocasiones, suceden 
@@ -29,21 +27,21 @@ desperdicio y poco elegante diseñar muchos tipos de microchips donde cada uno t
 {Intel} estaba haciendo hasta ahora. Llegaría una empresa y le pediría que construyera un \textbf{microchip} diseñado para realizar una tarea
 específica. \emph{Hoff} imaginó, al igual que \emph{Noyce} y otros, un enfoque alternativo: crear un \textbf{chip} de propósito general que pudiera
 ser instruido o programado para realizar una variedad de aplicaciones diferentes según se desee. En otras palabras, una computadora de propósito
-general en un \textbf{chip}. Esta visión coincidió con un problema que se planteó a \emph{Intel} en el verano de 1969. Una empresa japonesa llamada
+general en un \textbf{chip}. Esta visión coincidió con un problema que se planteó a \emph{Hoff} en el verano de 1969. Una empresa japonesa llamada
 \emph {Busicom} estaba planeando una nueva y poderosa calculadora de escritorio : la \textbf{Busicom 141-PF}, y había elaborado especificaciones para
 doce microchips de propósito especial para diseñar 12 chips personalizados para su nueva calculadora de impresión (diferentes para manejar pantalla,
 cálculos, memoria, etc.) que quería que \emph{Intel} construyera. \emph{Intel} estuvo de acuerdo y se fijó un precio. \emph{Noyce} le pidió a \emph
 {Hoff} que supervisara el proyecto. La cantidad de chips y su complejidad fue mucho mayor de lo que esperaba, por lo que no había forma de que \emph
-{Intel} pudidiera construirlos al precio acordado. \emph{Intel} se propuso diseñar un solo \textbf{chip} lógico que pudiera realizar casi todas las
-tareas que quería \emph{Busicom}. Para empeorar las cosas,  la creciente popularidad de la calculadora de bolsillo de \emph{Jack Kilby} estaba
-obligando a \emph{Busicom} a reducir aún más su precio. \emph{Noyce} le dijo a \emph{Intel} que lo intentara y tuvo que convencer a Grove del
-proyecto antes de venderle la idea a \emph{Busicom}. En septiembre de 1969, \emph{Intel} y su colega \emph{Stan Mazor} habían esbozado
+{Intel} pudidiera construirlos al precio acordado. Para empeorar las cosas,  la creciente popularidad de la calculadora de bolsillo de \emph{Jack Kilby} estaba
+obligando a \emph{Busicom} a reducir aún más su precio. \emph{Hoff} propueso que  \emph{Intel} diseñara un solo \textbf{chip} lógico que pudiera realizar casi todas las
+tareas que quería \emph{Busicom}. . \emph{Noyce} le dijo a \emph{Intel} que lo intentara y tuvo que convencer a Grove del
+proyecto antes de venderle la idea a \emph{Busicom}. En septiembre de 1969, \emph{Hoff} y su colega \emph{Stan Mazor} habían esbozado
 la arquitectura de un \textbf{chip} lógico de uso general que podía seguir instrucciones de programación. Sería capaz de hacer el trabajo de
 nueve de los doce chips que había solicitado \emph{Busicom}. Se diseñaron un conjunto cuatro chips conocido como \textbf{MCS-4}. Incluía un
 \textbf{chip} de unidad de procesamiento central (\textbf{CPU}), el \textbf{4004}, así como un \textbf{chip} de memoria de solo lectura
 (\textbf{ROM}) compatible para los programas de aplicaciones personalizadas, un \textbf{chip} de memoria de acceso aleatorio (\textbf{RAM})
 para procesar datos, y un \textbf{chip} de registro para el puerto de entrada/salida (E/S). Cuando llegó el momento de renegociar el precio,
-\emph{Intel} hizo una recomendación fundamental a \emph{Noyce}, que ayudó a crear un gran mercado para los chips de uso general y aseguró que
+\emph{Hoff} le hizo una recomendación fundamental a \emph{Noyce}, que ayudó a crear un gran mercado para los chips de uso general y aseguró que
 \emph{Intel} seguiría siendo un impulsor de la era digital. A cambio de darle a \emph{Busicom} un buen precio, \emph{Noyce} insistió en que
 \emph{Intel} retuviera los derechos del nuevo \textbf{chip} y se le permitiera licenciarlo a otras compañías para fines distintos a la
 fabricación de una calculadora. Debido a que era esencialmente un \textbf{procesador} de computadora en un \textbf{chip}, el nuevo dispositivo se
@@ -63,8 +61,8 @@ computadora electrónica construida en 1946, que llenó una habitación entera. 
 fabricó en obleas de dos pulgadas, en comparación con las obleas de 12 pulgadas que se utilizan habitualmente en los productos actuales.
 El \textbf {microprocesador} \textbf{Intel 4004} es único en el sentido de que es uno de los diseños de \textbf{microprocesador} más
 pequeños que alguna vez entró en producción comercial. El \textbf{4004}  era un \textbf{microprocesador} de \textbf{4-bits}, alcanzaba una máxima
-velocida de reloj 740 kHz. El ancho de línea del circuito del \textbf{microprocesador} \textbf{Intel 4004} era de 10 micrones o 10 000
-nanómetros. En 1971 el \textbf{Intel 4004} contenía 2300 transistores Para el 2010, un procesador \textbf{Intel Core} con matriz de procesamiento
+frecuencia de reloj 740 kHz. El ancho de línea del circuito (proceso de fabricación) del \textbf{microprocesador} \textbf{Intel 4004} era de 10 micrones o 10 000
+nanómetros. En 1971 el \textbf{Intel 4004} contenía 2300 transistores. Para el 2010, un procesador \textbf{Intel Core} con matriz de procesamiento
 de 32 nm y tecnología de \textbf{silicio} de puerta metálica de alta k de segunda generación contenía  560 millones de transistores. En comparación,
 un cabello humano promedio tiene 100,000 nanómetros de ancho \brackcite{intel_4004,wikipedia_2022_intel_4004}.      
 
@@ -391,11 +389,18 @@ a ambos tipos de núcleos, sino que además les permite trabajar conjuntamente e
 \end{figure}
 
 \section{\emph{AMD}: El camino hacia los \textbf{Ryzen}}
-Desde su concepción en 1969, \emph{AMD}(\emph{Advanced Micro Devices}) se centró en la producción de microprocesadores y componentes informáticos similares. Inicialmente,
-simplemente autorizó diseños de procesadores de otras compañías como \emph{Fairchild Semiconductor}. Aunque también comenzó a producir otros componentes de PC desarrollados
-completamente internamente, \emph{AMD} no produciría un \textbf{procesador} diseñado por él mismo durante varios años. 
+\emph{AMD}(\emph{Advanced Micro Devices}) fue creada formalmente por Jerry Sanders, junto con siete de sus colegas de \emph{Fairchild Semiconductor}, el 1 de mayo de 1969.
+Desde su concepción  \emph{AMD} se centró en la producción de microprocesadores y componentes informáticos similares. Inicialmente,
+autorizó diseños de procesadores de otras compañías como \emph{Fairchild Semiconductor}. AMD no llegaría a producir un microprocesador 
+diseñado en casa durante varios años. Esta compañia poco a poco fue escalando hasta llegar a convertirse en uno de los principales 
+rivales de \emph{Intel} en el terreno de los microprocesadares hoy en día.
 
-\subsection{El primer \textbf{procesador} x86}
+\subsection{La copia de AMD del 8080}
+En 1975  \emph{AMD} hizo una copia del microprocesador \textbf{Intel 8080} mediante técnicas de ingeniería inversa, al cual nombró como AMD 9080.
+Este fue producido originalmente sin licencia. Más tarde, se llegó a un acuerdo con \emph{Intel} para convertirse en una segunda fuente con licencia 
+para el 8080, lo que permitió que los chips de ambos fabricantes entraran en mercados que no aceptarían una pieza de una sola fuente.
+
+\subsection{El camino hasta tener un diseño propio x86}
 La entrada de \emph{AMD} en el mercado de los procesadores x86 comenzó a principios de la década de 1980 tras un acuerdo entre \emph{IBM} e \emph{Intel}. En ese momento, \emph{IBM}
 era uno de los mayores fabricantes de computadoras del mundo y posiblemente el mayor productor individual de productos informáticos. \emph{IBM} estaba deliberando sobre varios diseños
 de procesadores diferentes para usar en sus próximos productos cuando entró en negociaciones con \emph{Intel}. Si \emph{Intel} ganaba el contrato, obtendría un pedido masivo de los
@@ -406,10 +411,70 @@ para garantizar un volumen total suficiente. \emph{Intel}, que no quería perder
 \textbf{procesador} x86 diseñado completamente internamente. El \textbf{procesador} x86 \textbf{K5} de quinta generación usó un diseño innovador que combinó el \emph{hardware} de
 ejecución de los procesadores \textbf{AM29000} \textbf{RISC} descontinuados de \emph{AMD} con un \emph{front-end} x86. Debido a que el \emph{hardware} de \textbf{back-end} de ejecución
 se basó en un diseño \textbf {RISC}, las instrucciones se decodificaron en microinstrucciones que podrían alimentarse en una de las cinco unidades de ejecución de enteros o en una
-\textbf{FPU} integrada. 
+\textbf{FPU} integrada.
 
-\subsection{El primer \textbf{procesador} x86 de 64 bits}
-En 2003, \emph{AMD} sorprendió al mundo al presentar el primer \textbf{procesador} x86 de 64 bits orientado al consumidor. Con el nombre en código \textbf{K8}, estos procesadores eran
-esencialmente variaciones muy modificadas del K7. Al pasar a un diseño de 64 bits, \emph{AMD} pudo ampliar el soporte de memoria a 1 TB teórico.
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale = 0.2]{Graphics/amd-k5 PR166.jpg}
+	\caption{microprocesador AMD K5 PR166}
+	\label{fig:27}
+\end{figure}
 
-\section{Eficiencia por watt y la autonomía de los microprocesadores}
+\subsection{K6, Athlon, Duron y Sempron}
+En 1995, \emph{AMD} adquirió \emph{NexGen} (fabricante de procesadores de arquitectura \textbf{RISC} principalmente) por los derechos de la serie \textbf{NX} de procesadores compatibles con x86. 
+\emph{AMD} dio al equipo de diseño de \emph{NexGen} un edificio propio, los dejó solos, y les dio tiempo y dinero para reelaborar el \emph{Nx686}. El resultado fue el procesador K6, 
+introducido en 1995 y 1996. Aunque el K6 se basó en el Socket 7, algunas versiones como el \textbf{K6-3/450} fueron más rápidas que el Pentium II de Intel. 
+El \textbf{K7} es el procesador de séptima generación x86 de \emph{AMD}, haciendo su debut el 23 de junio de 1999, bajo la marca \textbf{Athlon}. A diferencia de los procesadores anteriores de AMD, 
+no podría ser utilizado en las mismas \emph{motherboards}, debido a problemas de licencia sobre el \textbf{Slot 1}(conector utilizado por algunos de los microprocesadores de \emph{Intel} como el \textbf{Pentium II})  
+de Intel, AMD decide entonces usar como nombre la letra "A" que hace referencia al \emph{bus} del procesador Alpha. \emph{Duron} fue una versión limitada y de menor costo del Athlon (64KB en 
+lugar de 256KB L2 de caché) con un \emph{socket} de 462-pin PGA (Socket A) o soldado directamente a la \emph{motherboard}. \emph{Sempron} fue lanzado como un procesador Athlon XP de menor 
+costo sustituyendo a \emph{Duron} en el \emph{socket} \textbf{A PGA}, desde entonces se ha mantenido y actualizado esta línea hasta el \emph{socket} \textbf{AM3}. 
+\subsection{K8}
+K8 es una gran revisión de la arquitectura K7, cuya mejora más notable es el agregado de extensiones de 64 bit sobre el conjunto de instrucciones x86. Esto es importante para AMD puesto 
+que marca un intento de definir el estándar x86 e imponerse, en vez de seguir los estándares marcados por Intel. Y al respecto, AMD ha tenido éxito. La historia ha dado un giro y 
+Microsoft adoptó el conjunto de instrucciones de AMD, dejando a Intel el trabajo de ingeniería inversa de las especificaciones de AMD (EM64T). Otras características notables de K8 
+son el aumento de los registros de propósito general (de 8 a 16 registros), la arquitectura \textbf{Direct Connect Architectur}e y el uso de \textbf{HyperTransport}
+(tecnología de comunicaciones bidireccional, que funciona tanto en serie como en paralelo, y que ofrece un gran ancho de banda en conexiones punto a punto de baja latencia).
+
+
+
+\subsection{K10}
+La próxima arquitectura de AMD, K10, fue un diseño bastante ambicioso. Está estrechamente relacionado con el K8, pero tenía varias mejoras en el núcleo y en el controlador de memoria y caché asociado. 
+El IPC se mejoró en comparación con K8, pero la mayor ventaja de K10 fue su diseño de cuatro núcleos que le permitió sacar ventaja sobre las CPU de doble núcleo K8 en aplicaciones con muchos subprocesos.
+
+Desafortunadamente, el K10 tuvo problemas desde el principio. Los primeros procesadores K10 se basaron en la configuración de \emph{Barcelona} y se vendieron como procesador de servidor \textbf{Opteron}.
+
+\subsection{Bulldozer}
+En octubre de 2011, \emph{AMD} presentó el sucesor de su arquitectura \textbf{K10}, cuyo nombre en código es \emph{"Bulldozer"}. Con \emph{Bulldozer}, \emph{AMD} intentó utilizar una gran cantidad 
+de núcleos y una velocidad de reloj superior para superar al recientemente lanzado \emph{Sandy Bridge}(Segunda generación de los \textbf{Intel Core}) de Intel. Sin embargo, el costo de este diseño 
+centrado en la frecuencia del reloj fue una caída marcada en el IPC en comparación con la arquitectura \textbf{K10}. El primer chip Bulldozer, con nombre en código Zambezi, no pudo superar 
+limpiamente a las CPU Thuban Phenom II X6(K10), y mucho menos vencer a \emph{Sandy Bridge}.
+El diseño fue criticado por consumir mucha energía y calentarse demasiado, aunque eso se deriva de comparaciones directas entre \emph{Bulldozer} y \emph{Sandy Bridge}.
+
+\subsection{Ryzen: AMD renace}
+AMD perdió terreno frente a Intel en prácticamente todas las áreas del mercado de CPU durante los años de \emph{Bulldozer}. 
+La empresa perdió importantes recursos financieros y tuvo que vender sus fábricas de silicio. Con una batalla cuesta arriba para 
+permanecer en el mercado de procesadores, AMD puso sus esperanzas en Ryzen.
+Bajo la microarquitecutra \emph{Zen}  en 2017 los primeros procesadores Ryzen salieron al mercado. 
+Zen es un diseño fresco que difiere de la antigua arquitectura Bulldozer. Los microprocesadores basados en Zen utilizan un proceso FinFET de 14 nm,  
+son más eficientes energéticamente y pueden ejecutar muchas más instrucciones por ciclo. Se introduce SMT
+(técnica para mejorar la eficiencia general de las CPU superescalares con subprocesos múltiples de hardware), lo que permite que cada núcleo ejecute dos subprocesos
+, aumentando el rendimiento del procesamiento mediante un mejor uso de los recursos disponibles.
+El sistema de caché también ha sido rediseñado. En Ryzen, AMD implementó por primera vez \emph{micro-op cache}, que permitía almacenar instrucciones usadas recientemente, 
+lo que mejora el rendimiento y reduce las paradas del \emph{pipeline}.
+Los procesadores Zen también emplean sensores en todo el chip para escalar dinámicamente la frecuencia y el voltaje. Esto permite que el propio procesador defina de forma 
+dinámica y automática la frecuencia máxima en función de la refrigeración disponible.
+La microarquitectura \emph{Zen} logró una mejora del 52\% en IPC sobre \emph{Excavator}. 
+El tope de gama de los Ryzen con microarquitecura Zen : Ryzen 7 1800X, tenía ocho núcleos  a 3,6 GHz y podía acelerar hasta 4,1 GHz en ciertas cargas de trabajo.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale = 0.4]{Graphics/ryzen 7 1800x.jpg}
+	\caption{Ryzen 7 1800x puesto en el  socket AM4}
+	\label{fig:28}
+\end{figure}
+
+Las próximas generaciones  \emph{Zen 2} y \emph{Zen 3}  trajeron notables mejoras a los Ryzen. Zen 2 introdujo la arquitectura basada en chiplet, 
+en la que todas las microprocesadores de escritorio, estación de trabajo y servidor utilizaban los mismos chiplets de núcleo. La principal ganancia 
+de rendimiento de \emph{Zen 3} sobre \emph{Zen 2} es la introducción de un CCX(CPU-Complex) unificado, lo que significa que cada núcleo chiplet ahora se compone de ocho núcleos 
+con acceso a 32 MB de caché, en lugar de dos conjuntos de cuatro núcleos con acceso a 16 MB de caché cada uno.
